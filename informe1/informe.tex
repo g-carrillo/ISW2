@@ -3,6 +3,7 @@
 \usepackage{graphicx}
 \usepackage{float}
 
+
 % Table de contenidos clickeable
 \usepackage{hyperref}
 \hypersetup{
@@ -17,7 +18,7 @@
 %%%% IMPORTANTE: 
 %%%%	Reemplazar "PROYECTO" con el nombre del proyecto.
 %%%%
-\newcommand{\nomproyecto}{PROYECTO}
+\newcommand{\nomproyecto}{Snoozefest}
 
 % Localización
 \usepackage[spanish]{babel}
@@ -107,14 +108,14 @@
 
 \section{Introducción}
 
-En el presente informe se describirá en detalle el proyecto a desarrollar junto con su planificación de actividades.
-\newline
+En este presente informe se describirá el proyecto a desarrollar junto con su planificación de actividades y la metodología a utilizar. Este proyecto intenta ofrecer una solución más apta para aquellas personas que experimentan un sueño inusualmente pesado, facilitando el proceso de configuración de alarmas afines a las necesidades del usuario.
+\\\\
 Este proyecto intentar ofrecer una solución más apta para aquellas personas que experimentan un sueño inusualmente pesado, facilitando el proceso de configuración de alarmas afines a las necesidades del usuario.
 
 \section{Objetivos del Proyecto}
-En esta sección se presenta el objetivo general y los objetivos específicos para el correcto desarrollo e implementación de \nomproyecto.
+En esta sección se presenta el objetivo general y los objetivos específicos para el correcto desarrollo e implementación de Snoozefest.
 \subsection{Objetivo General}
-Diseñar e implementar la aplicación móvil \nomproyecto, una aplicación de alarmas que requieren la solución de desafíos para ser desactivadas.
+Diseñar e implementar la aplicación móvil Snoozefest, una aplicación de alarmas que requieren la solución de desafíos para ser desactivadas.
 \subsection{Objetivos Específicos}
 A continuación se detallan los objetivos específicos que se consideran hitos claves para el desarrollo del proyecto con metodología ágil.
 \begin{itemize}
@@ -130,17 +131,18 @@ A continuación se detallan los objetivos específicos que se consideran hitos c
 
 \section{Descripción de la Problemática}
 En esta sección se da a conocer la motivación y el enfoque del proyecto, además de las soluciones actualmente presentes a la problemática.
+
 \subsection{Motivación}
-Muchas personas presentan dificultades para despertar con alarmas tradicionales. Esto puede deberse a diversos factores, como trastornos del sueño, factores ambientales, o simplemente variaciones normales entre individuos. Frecuentemente, las alarmas tradicionales son desactivadas por dichas personas mientras se encuentran en un estado de "inercia del sueño", una etapa entre el sueño y la vigilia en que el individuo experimenta capacidad cognitiva limitada.
+Muchas personas presentan dificultades para despertar con alarmas tradicionales. Esto puede deberse a diversos factores, como trastornos del sueño, factores ambientales, o simplemente variaciones normales entre individuos. Frecuentemente, las alarmas tradicionales son desactivadas por dichas personas mientras se encuentran en un estado de ``inercia del sueño", una etapa entre el sueño y la vigilia en que el individuo experimenta capacidad cognitiva limitada.
 \\
 Una solución actualmente aplicada a esta problemática es el uso de desafíos cognitivos que deber ser resueltos antes de desactivar las alarmas. Si bien esto puede dar buenos resultados, no se trata de una solución completa. Por ejemplo, no considera que la severidad de la inercia del sueño varía entre un día y otro incluso para un mismo individuo, y por lo tanto también debería variar la dificultad de los desafíos presentados. Si bien existe la posibilidad de establecer múltiples alarmas manualmente, esto presenta de la dificultad adicional de organizar manualmente dichas alarmas y sus dificultades, lo cual se dificulta aún más por los horarios de sueño irregulares presentados por personas con trastornos del sueño.
 \\
 Este proyecto busca desarrollar una solución completa a esta problemática, permitiendo que es usuario pueda establecer fácilmente conjuntos de alarmas cuyos desafíos se ajusten a sus necesidades personales.
 
 \subsection{Definición del Problema}
-%TODO
+El problema esta en que normalmente tenemos aplicaciones predeterminadas, las cuales ocupamos para poner nuestras alarmas para poder despertar, ese es el uso común de estas, pero en mas de un caso se da, que inconscientemente desactivamos esta alarma por el motivo que sea, pero seguido de esto no tenemos nada mas que nos pueda despertar, y la gente tiende a poner mas de una alarma consecutiva para que en el caso que se desactive esta misma, vuelva a sonar otra dentro de un periodo de tiempo.
 \subsection{Estado del Arte}
-	Las siguientes aplicaciones de alarmas ocupan nichos parecidos en la tienda de aplicaciones de Android.
+	Las siguientes aplicaciones de alarmas ocupan nichos similares en la tienda de aplicaciones de Android.
 
 	\begin{enumerate}
 		\item[] \textbf{Alarmy:} Permite establecer alarmas con desafíos aritméticos, entre otros.
@@ -151,13 +153,42 @@ Este proyecto busca desarrollar una solución completa a esta problemática, per
 \section{Descripción de la Solución Propuesta}
 En esta sección se detalla la solución propuesta a la problemática anteriormente definida. Se presentan las características, propósitos, alcances, y limitaciones de esta.
 \subsection{Características de la Solución}
+Las caracteristicas de la solución son las siguientes:
+
+\begin{itemize}
+    \item Configución de alarmas: El sistema permite configurar distintas alarmas.
+    \item Desafíos para desactivar alarmas: El sistema incluira distintos desafios para poder desactivar la alarma (aritmeticos/puzzle).
+    \item Dificultades de los desafíos: El sistema contendra distintos niveles de dificultad.
+    \item Configuración de alarmas por intervalo: El usuario puede configurar una serie de alarmas que suenan entre un intervalo de tiempo definido y cuyos desafíos son incrementalmente más difíciles.
+\end{itemize}
 \subsection{Propósitos de la Solución}
+La solución propuesta consiste en el desarrollo de una aplicación de alarmas innovadora que ofrece un método de despertar más efectivo y personalizado. Esta aplicación permitirá a los usuarios configurar alarmas, integrando ejercicios mentales como retos cognitivos que deben completar para desactivar la alarma. Al incorporar esta funcionalidad, se busca fomentar la actividad cerebral y asegurar un despertar más activo y consciente. Además, la aplicación recopilará datos comportamientos de los usuarios, lo que permitirá disminuir la dificultad o aumentar según el tiempo que demore en desactivar la alarma, garantizando así una experiencia de despertar más satisfactoria, efectiva y entretenida.
+ 
+\begin{itemize}
+    \item Experiencia usuario: Ofrecer un método de despertar que se adapte a las necesidades individuales de los usuarios, proporcionando una herramienta que garantice un despertar más activo y entretenido.
+    \item Activación cerebral: Incorporar ejercicios cognitivos que desafíen la mente del usuario, promoviendo una mayor agilidad mental desde el momento del despertar.
+    \item Obtención de datos: Recopilar información sobre el comportamiento de los usuarios con el fin de aumentar o disminuir la dificultad de los retos, mejorando la personalización de la experiencia.
+\end{itemize}
+
 \subsection{Alcances y Limitaciones de la Solución}
+\begin{itemize}
+    \item \textbf{Alcances:}
+    \begin{itemize}
+        \item Realización de una aplicación móvil para crear alarmas personalizadas con desafios de distintas dificultades.
+        \item  Entrega de documentación técnica, documentación de código y manual de usuario.
+    \end{itemize}
+    \item \textbf{Limitaciones:}
+     \begin{itemize}
+        \item La aplicación solo se podrá utilizar en un dispositivo móvil Android.
+        \item La aplicación solo estara disponible en español.
+    \end{itemize}
+    
+\end{itemize}
 
 \section{Metodología, Herramientas, y Ambiente de Desarrollo}
 En esta sección se describirán las metodologías que se usarán para gestionar el ciclo de vida del proyecto. Además, se detallarán las herramientas y el ambiente de desarrollo en que se trabajará.
 \subsection{Metodología a Usar}
-Para el proyecto se utilizará la metodología ágil SCRUM\cite{1}. Esta metodología fue desarrollada por los desarrolladores de software Ken Schwaber y Jeff Sutherland. El marco de trabajo Scrum consiste en los Equipos Scrum y sus roles, eventos, artefactos y reglas asociadas\cite{2}. Cada componente dentro del marco de trabajo sirve para un propósito específico y es esencial para el éxito de Scrum. El propósito de utilizar esta metodología es que al ser ágil nos ofrece una adaptabilidad a los requisitos, además que nos ofrece adaptabilidad a los requisitos, además de fomentar la colaboración continua entre los miembros del equipo. Esto permite responder de manera rápida a los cambios en el entorno del proyecto y a las necesidades del cliente, lo que a su vez contribuye a la entrega de productos de alta calidad en ciclos de desarrollo cortos.
+Para el proyecto se utilizará la metodología ágil SCRUM\cite{1}. Esta metodología fue desarrollada por los desarrolladores de software Ken Schwaber y Jeff Sutherland. El marco de trabajo Scrum consiste en los Equipos Scrum y sus roles, eventos, artefactos y reglas asociadas\cite{2}. Cada componente dentro del marco de trabajo sirve para un propósito específico y es esencial para el éxito de Scrum. El propósito de utilizar esta metodología es que al ser ágil nos ofrece una adaptabilidad a los requisitos, además que nos ofrece adaptabilidad a los requisitos y fomenta la colaboración continua entre los miembros del equipo. Esto permite responder de manera rápida a los cambios en el entorno del proyecto y a las necesidades del cliente, lo que a su vez contribuye a la entrega de productos de alta calidad en ciclos de desarrollo cortos.
 \subsection{Herramientas de Desarrollo}
 %Tabla de hardware y software
 \subsubsection{Hardware}
@@ -201,7 +232,7 @@ Para el software se contarán con los siguientes programas especificados en la t
 
 \subsection{Ambiente de Desarrollo}
 El proyecto será desarrollado en las instalaciones del Departamento de Matemática y Ciencia de la Computación de la Universidad de Santiago de Chile. También se hará uso de los espacios provistos por la Biblioteca Central de la misma institución.
-Las reuniones a distancia serán realizadas a través de Discord. Se almacenará la información de los avances y reuniones en Google Drive.\\
+Las reuniones a distancia serán realizadas a través de Discord. Se almacenará la información de los avances y reuniones en Google Drive y se hará uso de GitHub para coordinar el desarrollo de la aplicación.\\
 Para el progreso exitoso de este proyecto será necesario conjugar las distintas cargas académicas y responsabilidades personales de cada miembro del equipo de trabajo. El uso de la metodología ágil será de gran utilidad con su enfoque primeramente en las personas.\\
 Los recursos humanos se pueden apreciar en la Tabla \ref{table:3} con los cargos de cada integrante.
 \begin{table}[H]
@@ -224,7 +255,19 @@ Los recursos humanos se pueden apreciar en la Tabla \ref{table:3} con los cargos
 \section{Plan de Trabajo}
 En esta sección se detalla la planificación de entrevistas del proyecto y se presenta la carta Gantt.
 \subsection{Planificación de Entrevistas}
-
+En la Tabla \ref{table:4}, se muestran la fecha de reuniones de trabajo y entrevistas con el dueño del producto, Osvaldo Soto, con la razón de ajustar los objetivos del producto final de software.
+\begin{table}[H]
+    \centering
+    \caption{Entrevistas}
+    \begin{tabular}{|c|c|c|} \hline
+        \textbf{Fecha} & \textbf{Entrevistado} & \textbf{Raz\'on} \\ \hline
+         14/10 & Osvaldo Soto & Formalización del Anteproyecto\\\hline
+         18/10 & Osvaldo Soto & Captura de Requerimientos\\\hline
+         06/01 & Osvaldo Soto & Entrega del proyecto\\\hline
+    \end{tabular}
+    
+    \label{table:4}
+\end{table}
 \subsection{Planificación del Proyecto}
 Se establece una programación simple del proyecto dividido en 5 etapas principales:
 \begin{itemize}
@@ -246,13 +289,15 @@ A continuación se presenta la planificación del proyecto mediante la carta Gan
 \clearpage
 
 \section{Conclusiones}
-
-
+El proyecto detallado en este informe tiene como objetivo el desarrollo de una aplicación móvil de alarmas para la plataforma Android. Para esto, se definió claramente la metodología a usar, además de los hitos importantes que se consideran en la planificación. Se establecen las fechas de dichos hitos a través de una carta Gantt, además de los recursos humanos y tecnologías que serán utilizadas para su desarrollo.
+\\\\
+El trabajo se realizó de manera híbrida, trabajando tanto de forma prescencial en la universidad, como a través de medios digitales. Habiendo dado término a esta etapa del proyecto, el equipo se encuentra preparado para comenzar la siguiente etapa de ``Análisis de requerimientos y casos de uso".
 
 \clearpage
+\addcontentsline{toc}{section}{Referencias Bibliográficas}
 \begin{thebibliography}{a}
     \bibitem{1} \textbf{Schwaber, K.} (1997). \textit{Scrum development process}, in \textit{Business Object Design and Implementation: Scrum development process Proceedings 16 October 1995, Austin, Texas}, pp. 117-134. Springer.
-     \bibitem{2}    \textbf{Scrum Alliance}. (2020). \textit{La Guía de ScrumTM}. 
+     \bibitem{2}    \textbf{Scrum Alliance}. (2020). \textit{La Guía de Scrum}. 
 \end{thebibliography}
 
 \end{document}
