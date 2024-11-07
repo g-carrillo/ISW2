@@ -1,0 +1,44 @@
+\section{Análisis de Requerimientos}
+En esta sección se listan y describen los distintos requerimientos que han sido capturados por el equipo.
+\subsection{Requerimientos Funcionales}
+Se describen en detalle los requerimientos funcionales del sistema. Los requerimientos funcionales se refieren a las operaciones que el sistema debe efectuar, describiendo las transformaciones que el sistema realiza sobre las entradas para producir salidas específicas.
+
+\begin{itemize}
+    \item \textbf{Crear Alarma Individual:} El usuario debe poder crear alarmas individuales. La creación de una alarma incluye la configuración del sonido, desafíos, y hora de la alarma.
+    \item \textbf{Crear Alarma por Intervalos:} El usuario podrá crear un grupo de alarmas definidas por una hora límite, un intervalo de tiempo, y el número de alarmas.
+    \item \textbf{Modificar Alarma:} El usuario podrá modificar la configuración de una alarma previamente creada.
+    \item \textbf{Eliminar Alarma:} El usuario podrá eliminar una alarma previamente creada.
+    \item \textbf{Desactivar Alarma:} El usuario podrá desactivar una alarma antes de que suene.
+    \item \textbf{Activar Alarma:} El usuario podrá activar una alarma previamente desactivada.
+    \item \textbf{Sonar Alarma:} El sistema debe poder sonar una alarma previamente definida, aún si la aplicación no se encuentra abierta.
+    \item \textbf{Apagar Alarma:} El usuario podrá apagar una alarma que está sonando a través de la resolución del desafío.
+    \item \textbf{Resolver Desafío:} El usuario podrá resolver distintos tipos de desafío para apagar sus alarmas.
+    \item \textbf{Exportar Estadísticas:} El usuario podrá exportar sus datos de usuario para análisis externo. El administrador podrá acceder a datos anónimos de los usuarios de la aplicación.
+\end{itemize}
+\subsection{Requerimientos no Funcionales}
+Los requerimientos no funcionales establecen las características y atributos que el sistema debe poseer para garantizar un funcionamiento óptimo y una experiencia de usuario satisfactoria. A continuación se detallan estos requerimientos:
+
+\begin{itemize}
+    \item Usabilidad: La aplicación debe ofrecer una interfaz intuitiva y fácil de navegar, permitiendo a los usuarios configurar alarmas y desafíos sin dificultad. Se busca minimizar la curva de aprendizaje y facilitar la interacción con el sistema.
+    \item Rendimiento: El sistema debe responder de manera eficiente a las interacciones del usuario, con tiempos de carga mínimos. Las alarmas y desafíos deben activarse puntualmente sin retrasos perceptibles.
+    \item Confiabilidad: La aplicación debe ser estable y evitar fallos o cierres inesperados. Las alarmas deben funcionar correctamente incluso si el dispositivo se encuentra en modo de ahorro de energía o si la aplicación está en segundo plano.
+    \item Compatibilidad: El sistema debe ser compatible con una amplia gama de dispositivos Android, abarcando desde versiones anteriores hasta las más recientes del sistema operativo.
+    \item Seguridad: Se debe garantizar la protección de los datos personales y de configuración del usuario, impidiendo el acceso no autorizado a la información almacenada en el dispositivo. 
+    \item Accesibilidad: La aplicación debe cumplir con estándares de accesibilidad para facilitar su uso a personas con discapacidades visuales o motoras.
+\end{itemize}
+
+\subsection{Requerimientos de Implementación}
+
+Los requerimientos de implementación definen las restricciones y especificaciones técnicas para el desarrollo del sistema. A continuación se describen estos requerimientos:
+\begin{itemize}
+\item Lenguaje de programación: Se utilizará Kotlin como lenguaje principal para el desarrollo de la aplicación, aprovechando su interoperabilidad con Java y sus características modernas.
+\item Entorno de desarrollo:Se empleará Android Studio versión 2024.2.1.9 como plataforma de desarrollo integrada (IDE), ya que ofrece herramientas avanzadas para el desarrollo y depuración de aplicaciones Android.
+\item Base de datos: Se implementará SQLite versión 3.45.2 para el almacenamiento local de datos, permitiendo gestionar la configuración de alarmas, historial y estadísticas de uso.
+\item Control de versiones: Se utilizará Git como sistema de control de versiones, alojando el repositorio en GitHub para facilitar la colaboración y el seguimiento de cambios en el código fuente.
+\item Dispositivos objetivo: La aplicación está diseñada para funcionar en dispositivos móviles con sistema operativo Android, desde la versión 8.0 (Oreo) en adelante.
+\item Bibliotecas y APIs: Se integrarán bibliotecas y APIs compatibles con Kotlin y Android para funcionalidades específicas, como notificaciones, sensores de movimiento y análisis de datos.
+\item Estándares de codificación: Se seguirán las pautas y buenas prácticas recomendadas por Google para el desarrollo de aplicaciones Android, asegurando la legibilidad y mantenibilidad del código.
+\item Documentación: Se generará documentación técnica detallada y un manual de usuario, facilitando la comprensión y uso de la aplicación tanto para desarrolladores como para usuarios finales.
+\item Pruebas: Se realizarán pruebas exhaustivas en dispositivos físicos y emuladores para garantizar el correcto funcionamiento de la aplicación en diferentes entornos y condiciones.
+\item Idiomas: Inicialmente, la aplicación estará disponible en español, enfocándose en el mercado hispanohablante.
+\end{itemize}
