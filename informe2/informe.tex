@@ -17,7 +17,10 @@
 
 % Localización
 \usepackage[spanish]{babel}
-
+\addto\captionsspanish{
+    \renewcommand{\tablename}{Tabla}
+    \renewcommand{\listtablename}{Índice de tablas} % Change to "Tablas" if you prefer
+}
 % Números de páginas
 \pagenumbering{arabic}
 \usepackage{fancyhdr}
@@ -44,7 +47,7 @@
 
 \include{titlepage.tex}
 
-\tableofcontents
+{\centering\tableofcontents\par}
 \listoftables
 \listoffigures
 \clearpage
