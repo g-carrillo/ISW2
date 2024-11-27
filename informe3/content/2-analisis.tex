@@ -7,18 +7,38 @@ En la etapa de análisis de compotamiento se definen las operaciones realizadas 
 
 \subsection{Análisis de Objetos}
 
-\subsubsection{Modelo de Objetos de Análisis}
 
-\subsection{Análisis de Comportamiento}
+\subsubsection{Modelo de Objetos de Análisis}
+\begin{figure}[H]
+	\centering
+	\includegraphics[page=1,width=\textwidth]{./img/uml.png}
+	\caption{Diagrama de Objetos de Análisis}
+        \vspace{10pt}
+	\label{fig:Diagrama de Objetos de Análisis}
+\end{figure}
+
 \subsubsection{Diccionario de Datos del Modelo de Objetos}
 \begin{table}[H]
     \centering
-    \caption{Lista de Operaciones de Usuario}
+    \caption{Diccionario de Datos}
     \vspace{10pt}
-    \begin{tabular}{}
+    \begin{tabular}{|l|p{0.4\linewidth}|p{0.4\linewidth}|}
         \hline
-	
+        \textbf{Clase} & \textbf{Descripción} & \textbf{Atributos} \\
         \hline
+        Desafío & Desafío a resolver & Dificultad: nivel de dificultad\\
+        \hline
+        Desafío Aritmético & Desafío que requiere la resolución de problemas aritméticos & Números: número de operandos\newline Operaciones Aritméticas: operadores a utilizar\newline Solución: solución del desafío\\
+        \hline
+        Desafío Rompecabezas & Desafío que requiere la resolución de un rompecabezas. & Piezas: número de piezas a organizar \newline Solución: orden correcto de las piezas\\
+        \hline
+        Alarma & Una alarma o grupo de alarmas fijadas. & Sonido: sonido a utilizar\\
+        \hline
+        Alarma Única & Alarma que no pertenece a un grupo. & Hora: hora de activación de la alarma\\
+        \hline
+        Alarma Por Intervalo & Grupo de alarmas que sonarán durante un intervalo de tiempo. & Hora Inicio: hora de la primera alarma\newline Hora Final: hora de la última alarma\newline Cantidad: número de alarmas que sonarán durante el intervalo.\\
+        \hline
+
     \end{tabular}
     
     \label{table:1}
@@ -30,13 +50,69 @@ En la etapa de análisis de compotamiento se definen las operaciones realizadas 
 \begin{table}[H]
     \centering
     \caption{Lista de Operaciones de Usuario}
-    \vspace{10pt}
-    \begin{tabular}{| p{0.4\linewidth} | p{0.4\linewidth} |}
+    \vspace{5pt}
+    \begin{tabular}{| c | l | l |}
         \hline
-	
+        Número & Operación & ID Caso de Uso \\
+        \hline
+        1 & Ingresar hora de inicio & 1 - 12 \\
+        \hline
+        2 & Ingresar hora de término & 1 - 12 \\
+        \hline
+        3 & Ingresar frecuencia & 1 - 12 \\
+        \hline
+        4 & Seleccionar opción ``Desafío aritmético" & 1 - 2 - 10 - 12 - 6 \\
+        \hline
+        5 & Seleccionar opción ``Desafío rompecabezas" & 1 - 2 - 10 - 12 - 6 \\
+        \hline
+        6 & Seleccionar opción ``Desafío memorice" & 1 - 2 - 10 - 12 - 6 \\
+        \hline
+        7 & Seleccionar opción ``Ingresar Intervalo" & 1 \\
+        \hline
+        8 & Ingresar hora de alarma & 2 - 10 - 6 \\
+        \hline
+        9 & Seleccionar opción ``Ingresar alarma" & 2 \\
+        \hline
+        10 & Ingresar solución & 3 \\
+        \hline
+        11 & Seleccionar opción ``Ingresar Solución" & 3 \\
+        \hline
+        12 & Mover piezas del rompecabezas & 4 \\
+        \hline
+        13 & Seleccionar opción ``Comprobar" & 4 \\
+        \hline
+        14 & Seleccionar cartas & 5 \\
+        \hline
+        15 & Seleccionar opción ``Desactivar alarma" & 7 \\
+        \hline
+        16 & Seleccionar opción ``Alarma única" & 8 \\
+        \hline
+        17 & Seleccionar opción ``Alarma por Intervalos" & 8 \\
+        \hline
+        18 & Seleccionar opción "Seleccionar alarma" & 9 \\
+        \hline
+        19 & Seleccionar opción "Eliminar alarma" & 8 \\
+        \hline
+        20 & Ingresar invervalo & 10 - 12 \\
+        \hline
+        21 & Seleccionar opción "Guardar cambios" & 10 - 6 - 12 \\
         \hline
     \end{tabular}    
     
-    \label{table:1}
+    \label{table:2}
 \end{table}
+
+\subsection{Especificación de la interfaz de usuario}
+En esta sección se presenta el diagrama de diálogo y la especificación de sus componentes que servirán como base para la interfaz de usuario de Snoozefest. El diagrama de diálogo representa la forma en que el usuario interactúa con el sistema y se mueve a través de los diálogos, mientras que la especificación de sus componentes establece los elementos que compondrán dichos diálogos.
+
+\subsubsection{Diagramas de Diálogo}
+\begin{figure}[H]
+	\centering
+	\includegraphics[page=1,width=\textwidth]{./img/dialogos.pdf}
+	\caption{Diagramas de Diálogo}
+        \vspace{10pt}
+	\label{fig:Diagrama de Diálogos}
+\end{figure}
+
+\subsubsection{Especificación de Componentes}
 
