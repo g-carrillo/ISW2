@@ -106,7 +106,7 @@ Se listan a continuación todas las operaciones identificadas a partir de los ca
     
     \label{table:2}
 \end{table}
-
+\newpage
 \subsection{Especificación de la interfaz de usuario}
 En esta sección se presenta el diagrama de diálogo y la especificación de sus componentes que servirán como base para la interfaz de usuario de Snoozefest. El diagrama de diálogo representa la forma en que el usuario interactúa con el sistema y se mueve a través de los diálogos, mientras que la especificación de sus componentes establece los elementos que compondrán dichos diálogos.
 
@@ -119,7 +119,7 @@ El diagrama de diálogo permite visualizar claramente la interacción entre el u
         \vspace{10pt}
 	\label{fig:Diagrama de Diálogos}
 \end{figure}
-
+\newpage
 \subsubsection{Especificación de Componentes}
 Habiendo establecido los diálogos, se especifican los elementos que los componen.
 
@@ -173,7 +173,7 @@ Habiendo establecido los diálogos, se especifican los elementos que los compone
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\textwidth]{~/uni/inge2/informe3/img/componentes/07-DesactivarAlarma.png}
+	\includegraphics[width=0.3\textwidth]{~/uni/inge2/informe3/img/componentes/07-DesactivarAlarma.png}
 	\caption{Desactivar Alarma}
         \vspace{5pt}
 	\label{fig:Desactivar Alarma}
@@ -210,3 +210,100 @@ Habiendo establecido los diálogos, se especifican los elementos que los compone
         \vspace{5pt}
 	\label{fig:Modificar Alarma}
 \end{figure}
+
+\begin{table}[H]
+    \centering
+    \caption{Tabla de descripción de componentes}
+    \vspace{5pt}
+\begin{tabular}{|p{4cm}|p{5cm}|p{5cm}|}
+    \hline
+    \textbf{Diálogo} & \textbf{Manipulación} & \textbf{Retroalimentación} \\ \hline
+    Ingresar alarma por intervalos &
+    Ingresar hora de inicio\newline
+    Ingresar hora de término\newline
+    Ingresar cantidad de alarmas\newline
+    Seleccionar tipo de desafío\newline
+    Seleccionar opción "Ingresar Alarma"
+    &
+    Entrada:\newline
+    Hora de Inicio\newline
+    Hora de Término\newline
+    Cantidad de Alarmas\newline
+    Tipo de Desafío\newline
+\\ \hline
+    Ingresar alarma única &
+    Ingresar hora\newline
+    Seleccionar tipo de desafío\newline
+    Seleccionar opción "Ingresar Alarma"
+    &
+    Entrada:\newline
+    Hora\newline
+    Tipo de Desafío\newline
+ \\ \hline
+    Modificar alarma por intervalo &
+    Ingresar hora de inicio\newline
+    Ingresar hora de término\newline
+    Ingresar cantidad de alarmas\newline
+    Seleccionar tipo de desafío\newline
+    Seleccionar opción "Modificar Alarma"
+    &
+    Entrada:\newline
+    Hora de Inicio\newline
+    Hora de Término\newline
+    Cantidad de Alarmas\newline
+    Tipo de Desafío\newline
+    
+ \\ \hline
+    Modificar alarma única &
+    Ingresar hora\newline
+    Seleccionar tipo de desafío\newline
+    Seleccionar opción "Modificar Alarma"
+    &
+    Entrada:\newline
+    Hora\newline
+    Tipo de Desafío\newline
+ \\ \hline
+    Resolver aritmética &
+    Ingresar solución ejercicio\newline
+    &
+    Entrada:\newline
+    Solución\newline
+ \\ \hline
+    Resolver rompecabezas &
+    Ingresar movimiento de piezas
+    &
+    Entrada:\newline
+    Movimiento de piezas\newline
+    Solución\newline
+
+ \\ \hline
+    Resolver memorice &
+    Ingresar cartas seleccionadas
+    &
+    Entrada:\newline
+    2 Cartas seleccionadas\newline
+    Salida:
+
+ \\ \hline
+    Borrar alarma &
+    Seleccionar Alarma\newline
+    Seleccionar opción "Eliminar Alarma"
+    &
+    Entrada:\newline
+    ID de la alarma\newline
+ \\ \hline
+    Modificar alarma &
+    Seleccionar tipo de alarma\newline
+    &
+    Entrada:\newline
+    Tipo de Alarma\newline
+ \\ \hline
+    Snoozefest &
+    Seleccionar opción "Crear Alarma"\newline
+    Seleccionar opción "Tipo de alarma"\newline
+    &
+    \\ \hline
+\end{tabular}
+    
+    \label{table:2}
+\end{table}
