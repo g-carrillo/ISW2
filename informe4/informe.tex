@@ -1,0 +1,56 @@
+\documentclass[letterpaper, 10pt]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{longtable}
+\usepackage{import}
+
+% Table de contenidos clickeable
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+% Localización
+\usepackage[spanish]{babel}
+\addto\captionsspanish{
+    \renewcommand{\tablename}{Tabla}
+    \renewcommand{\listtablename}{Índice de tablas} % Change to "Tablas" if you prefer
+}
+% Números de páginas
+\pagenumbering{arabic}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[R]{\thepage}
+
+%
+% Ambiente para las listas de la portada
+\newenvironment{simplelist}
+	{
+		\renewcommand\labelitemi{}
+		\begin{itemize}
+		\setlength{\itemsep}{0pt}
+		\setlength{\parskip}{0pt}
+	}
+	{\end{itemize}}
+%
+
+\begin{document}
+
+\import{.}{titlepage.tex}
+
+{\centering\tableofcontents\par}
+{\centering\listoffigures\par}
+{\centering\listoftables\par}
+\clearpage
+
+\import{.}{content.tex}
+
+\end{document}
