@@ -1,7 +1,7 @@
 PDF = pdflatex
 PDFFLAGS =
 AUX = ./.aux
-DEPS = ./content/1-intro.tex ./content/2-diseño.tex ./content/3-conclusiones.tex ./content.tex ./titlepage.tex ./content/img/mvc.png ./logo.png
+DEPS = ./content/1-intro.tex ./content/2-diseño.tex ./content/3-conclusiones.tex ./content.tex ./titlepage.tex ./content/img/MVC.png ./logo.png
 
 #informe: informe.pdf $(DEPS)
 
